@@ -39,7 +39,16 @@ export function Footer() {
 
         <div className="mt-6 pt-6 border-t border-border">
           <p className="text-center text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Dimitra Tzika. All rights reserved.
+            © {new Date().getFullYear()} Powered by{" "}
+            <a
+              href="https://lumireta.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-primary transition-colors"
+            >
+              Lumireta
+            </a>
+            . All rights reserved.
           </p>
         </div>
       </div>
