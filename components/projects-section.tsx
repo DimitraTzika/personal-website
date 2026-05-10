@@ -4,32 +4,32 @@ import { Calendar, ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
-    period: "Feb 2024 — Jul 2024",
+    period: "Jul 2024",
     title: "Information System Project Management",
     url: "https://github.com/CarOps-28/CarOps",
     description:
-      "Managed the design and planning of an information system in a five-person team, utilizing industry-standard project management methodologies.",
+      "Worked in a team to plan and manage an information system for scheduling and task coordination, using MS Project to keep the project structured and trackable.",
     highlights: [
-      "Used MS Project to set milestones, define dependencies, and assign tasks effectively",
-      "Created Gantt charts to track project progress and ensure tasks stayed on schedule",
-      "Held regular meetings to review milestones, update timelines, and address challenges proactively",
-      "Presented progress to stakeholders, showcasing achieved milestones and necessary adjustments",
+      "Planned tasks, timelines, and dependencies in MS Project",
+      "Managed progress with Gantt charts, regular team meetings, and stakeholder presentations to support timely delivery",
     ],
     tools: [
       "MS Project",
       "Gantt Charts",
-      "Stakeholder Management",
+      "Project Planning",
+      "Stakeholder Presentations",
       "Team Collaboration",
     ],
   },
   {
-    period: "Oct 2023 — Jan 2024",
+    period: "Jan 2024",
     title: "Process Optimization Project",
+    url: "",
     description:
-      "Collaborated in a two-person team to optimize business processes, focusing on enhancing efficiency and reducing redundancy.",
+      "Collaborated in a two-person team to analyze and optimize business processes by identifying inefficiencies and improvement opportunities.",
     highlights: [
-      "Developed optimized process models that streamlined tasks and reduced redundancy",
-      "Utilized BPMN (Business Process Model and Notation) to document processes and identify improvement opportunities",
+      "Used BPMN to model workflows and clarify process steps and bottlenecks",
+      "Proposed improvements that reduced redundancy and increased operational efficiency",
     ],
     tools: [
       "BPMN",
@@ -39,21 +39,20 @@ const projects = [
     ],
   },
   {
-    period: "Feb 2023 — Jul 2023",
-    title: "Information System Development",
+    period: "Jan 2023",
+    title: "SAP Inventory Management Project",
+    url: "",
     description:
-      "Developed an information system from scratch, focusing on efficient process management and data handling.",
+      "Simulated warehouse operations using SAP, focusing on inventory management, product stock levels, and stock movement processes.",
     highlights: [
-      "Used UML diagrams in Visual Paradigm to map system structure and processes",
-      "Analyzed 'as-is' and 'to-be' process states to highlight key operational improvements",
-      "Created UI mock-ups and streamlined workflows, collaborating with Miro for iterative design",
+      "Managed product inventory and stock movement scenarios within an SAP environment",
+      "Connected warehouse tasks with broader logistics and business process flows",
     ],
     tools: [
-      "UML",
-      "Visual Paradigm",
-      "Miro",
-      "UI/UX Design",
-      "Systems Analysis",
+      "SAP",
+      "Inventory Management",
+      "Warehouse Operations",
+      "Stock Movements",
     ],
   },
 ];
@@ -87,10 +86,12 @@ export function ProjectsSection() {
                   </div>
                   <h4 className="text-xl font-semibold group-hover:text-primary transition-colors flex items-center gap-2">
                     {project.title}
-                    <ArrowUpRight
-                      className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer"
-                      onClick={() => window.open(project.url, "_blank")}
-                    />
+                    {project.url && (
+                      <ArrowUpRight
+                        className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer"
+                        onClick={() => window.open(project.url, "_blank")}
+                      />
+                    )}
                   </h4>
                 </div>
               </div>

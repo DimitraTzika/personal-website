@@ -4,21 +4,20 @@ import { ExternalLink } from "lucide-react";
 
 const experiences = [
   {
-    period: "Jan 2026 — Present",
+    period: "Jan 2026 - Present",
     role: "Sales Promoter",
     company: "Teleraise IKE",
     url: "https://www.teleraise.gr/",
     location: "Thessaloniki, Greece",
     description: [
-      "Promoted telecommunications services through direct customer interaction, consistently achieving sales targets",
-      "Analyzed customer needs and presented tailored solutions, strengthening communication and negotiation skills",
-      "Collaborated with team members to improve sales performance and customer engagement strategies",
+      "Promoted telecommunications services through direct customer interaction, consistently meeting sales targets",
+      "Identified customer needs and presented tailored solutions, improving communication and sales performance",
     ],
-    skills: ["Customer Relations", "Sales", "Communication", "Negotiation"],
+    skills: ["Sales", "Customer Interaction", "Communication", "Problem Solving"],
   },
   {
-    period: "Jun 2025 — Aug 2025",
-    role: "Intern — Sales and Logistics",
+    period: "Jun 2025 - Aug 2025",
+    role: "Intern - Sales and Logistics",
     company: "Cristal Hellenic IKE",
     url: "",
     location: "Thessaloniki, Greece",
@@ -29,14 +28,13 @@ const experiences = [
     skills: ["SAP ERP", "Sales Operations", "Logistics", "Invoice Management"],
   },
   {
-    period: "Summers 2019 — 2023",
+    period: "Summers 2019 - 2023",
     role: "Group Leader",
     company: "Skouras Camp",
     url: "https://skourascamp.com",
     location: "Halkidiki, Greece",
     description: [
-      "Managed communication and coordination with 500+ parents, ensuring smooth daily operations",
-      "Supervised and organized activities for groups of 15+ children, maintaining safety and engagement throughout the program",
+      "5 years of experience organizing daily activities for children and communicating with parents on a daily basis",
     ],
     skills: ["Leadership", "Communication", "Organization", "Team Management"],
   },
@@ -70,13 +68,15 @@ export function ExperienceSection() {
                   <h4 className="text-xl font-semibold group-hover:text-primary transition-colors">
                     {exp.role}
                   </h4>
-                  <span className="text-muted-foreground">·</span>
+                  <span className="text-muted-foreground">-</span>
                   <span className="text-primary flex items-center gap-1">
                     {exp.company}
-                    <ExternalLink
-                      className="w-3 h-3 cursor-pointer"
-                      onClick={() => window.open(exp.url, "_blank")}
-                    />
+                    {exp.url && (
+                      <ExternalLink
+                        className="w-3 h-3 cursor-pointer"
+                        onClick={() => window.open(exp.url, "_blank")}
+                      />
+                    )}
                   </span>
                 </div>
 

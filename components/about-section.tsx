@@ -19,7 +19,7 @@ const highlights = [
     icon: Target,
     title: "Focus",
     description:
-      "Business process analysis, digital transformation, and data-driven decision making",
+      "Business process analysis, information systems design, and SAP technologies",
   },
   {
     icon: Lightbulb,
@@ -47,23 +47,22 @@ export function AboutSection() {
             </h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I&apos;m a business-oriented Computer Science graduate with a
-                passion for understanding how technology can solve real business
-                challenges. My academic journey at the University of Macedonia
-                provided me with a unique perspective that combines technical
-                knowledge with business acumen.
+                I&apos;m a Computer Science graduate with hands-on experience in
+                SAP ERP systems through internship involvement in sales and
+                logistics operations.
               </p>
               <p>
-                Through my experience with BPMN process modeling, UML diagrams,
-                and project planning tools like MS Project and Visual Paradigm,
-                I&apos;ve developed a systematic approach to analyzing and
-                optimizing business processes.
+                Through business process analysis, information systems design,
+                BPMN process modeling, UML diagrams, and MS Project planning,
+                I&apos;ve developed a structured approach to understanding and
+                improving business workflows.
               </p>
               <p>
                 My hands-on work with SAP ERP systems in sales and logistics
                 operations has given me practical insights into enterprise
                 business operations, from order management to delivery
-                coordination and invoicing.
+                coordination and invoicing, while my personal learning in ABAP
+                programming supports my growing interest in SAP technologies.
               </p>
             </div>
           </div>

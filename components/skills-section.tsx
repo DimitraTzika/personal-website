@@ -1,38 +1,33 @@
 "use client";
 
-import { Briefcase, Wrench, Palette, GitBranch, Globe } from "lucide-react";
+import { Briefcase, Palette, GitBranch, Globe, Code2 } from "lucide-react";
 
 const skillCategories = [
   {
     icon: Briefcase,
-    title: "Business Analysis",
-    skills: [
-      "Requirements Gathering",
-      "BPMN",
-      "UML Diagrams",
-      "Process Optimization",
-      "Stakeholder Communication",
-    ],
-  },
-  {
-    icon: Wrench,
     title: "Business Tools",
-    skills: ["SAP ERP", "Jira", "MS Project", "Trello", "Miro", "Salesforce"],
-  },
-  {
-    icon: Palette,
-    title: "Design",
-    skills: ["Figma", "Canva", "Visual Paradigm", "UI Mock-ups", "Wireframing"],
+    skills: ["SAP ERP", "Jira", "MS Project", "Trello", "BPMN", "UML Diagrams"],
   },
   {
     icon: GitBranch,
-    title: "Methodologies",
+    title: "Collaboration",
     skills: [
       "Agile (Scrum)",
       "Sprint Planning",
       "Project Coordination",
-      "Waterfall",
+      "Team Collaboration",
+      "Problem Solving",
     ],
+  },
+  {
+    icon: Palette,
+    title: "Design",
+    skills: ["Figma", "Canva", "Miro", "Visual Paradigm"],
+  },
+  {
+    icon: Code2,
+    title: "Development",
+    skills: ["Java", "SQL"],
   },
   {
     icon: Globe,

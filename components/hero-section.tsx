@@ -48,9 +48,9 @@ export function HeroSection() {
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed mb-10">
-              Business-oriented Computer Science graduate with experience in
-              business process analysis, information systems design, and project
-              coordination. Bridging the gap between technology and business.
+              Computer Science graduate with hands-on SAP ERP experience in
+              sales and logistics operations, business process analysis, and
+              information systems design.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-16">

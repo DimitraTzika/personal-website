@@ -4,7 +4,7 @@ import { GraduationCap, Award, BookOpen } from "lucide-react";
 
 export function EducationSection() {
   return (
-    <section className="py-24 px-6 lg:px-20">
+    <section id="education" className="py-24 px-6 lg:px-20">
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center gap-4 mb-12">
           <div className="w-12 h-px bg-primary" />
@@ -39,7 +39,7 @@ export function EducationSection() {
             <div className="flex flex-wrap gap-4 mb-6">
               <div className="flex items-center gap-2 text-sm">
                 <span className="text-muted-foreground">Period:</span>
-                <span className="font-medium">Oct 2021 — Oct 2025</span>
+                <span className="font-medium">Oct 2021 - Oct 2025</span>
               </div>
               <div className="flex items-center gap-2 text-sm">
                 <span className="text-muted-foreground">Location:</span>
@@ -59,32 +59,52 @@ export function EducationSection() {
                 <BookOpen className="w-4 h-4 text-primary mt-1 shrink-0" />
                 <p className="text-sm text-muted-foreground">
                   Academic projects focused on business process analysis,
-                  systems modeling (UML, BPMN) and project planning
+                  systems modeling and project planning
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="p-6 rounded-xl border border-primary/50 bg-primary/5">
-            <div className="flex items-center gap-3 mb-4">
-              <Award className="w-6 h-6 text-primary" />
-              <span className="font-semibold">Academic Achievement</span>
-            </div>
-            <div className="text-center py-6">
-              <div className="text-5xl font-bold text-primary mb-2">8.00</div>
-              <p className="text-muted-foreground text-sm">
-                Grade Point Average
-              </p>
-              <p className="text-muted-foreground text-xs mt-1">(out of 10)</p>
-            </div>
-            <div className="pt-4 border-t border-border">
-              <p className="text-xs text-muted-foreground text-center">
-                Graduated with strong academic performance in Business,
-                Management, Marketing, and Related Support Services
-              </p>
+          <div className="space-y-6">
+            <div className="p-6 rounded-xl border border-primary/50 bg-primary/5">
+              <div className="flex items-center gap-3 mb-4">
+                <Award className="w-6 h-6 text-primary" />
+                <span className="font-semibold">Academic Achievement</span>
+              </div>
+              <div className="text-center py-6">
+                <div className="text-5xl font-bold text-primary mb-2">
+                  8.00
+                </div>
+                <p className="text-muted-foreground text-sm">
+                  Grade Point Average
+                </p>
+                <p className="text-muted-foreground text-xs mt-1">
+                  (out of 10)
+                </p>
+              </div>
+              <div className="pt-4 border-t border-border">
+                <p className="text-xs text-muted-foreground text-center">
+                  Graduated with strong academic performance in Business,
+                  Management, Marketing, and Related Support Services
+                </p>
+              </div>
             </div>
           </div>
         </div>
+        <div className="p-6 rounded-xl border border-border bg-card mt-12">
+              <div className="flex items-center gap-3 mb-4">
+                <BookOpen className="w-6 h-6 text-primary" />
+                <span className="font-semibold">Course & Certification</span>
+              </div>
+              <p className="font-medium leading-snug">
+                Learning Basic ABAP Programming
+              </p>
+              <p className="text-sm text-muted-foreground mt-1">SAP</p>
+              <p className="text-xs text-muted-foreground mt-4 leading-relaxed">
+                Foundational ABAP programming course supporting continued
+                learning in SAP technologies.
+              </p>
+            </div>
       </div>
     </section>
   );
